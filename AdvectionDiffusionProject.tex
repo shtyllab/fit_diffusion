@@ -1,10 +1,125 @@
 \documentclass{article}
 
+\usepackage{hyperref}
+
 \usepackage{Sweave}
 \begin{document}
 \input{AdvectionDiffusionProject-concordance}
 
 \noindent The movement of compounds in the environment is driven by two processes, advection and diffusion. Of course, these processes occur in three dimensions, but for this class we'll begin with one dimensional processes before getting to more complecated examples.
+
+\section{Session Outcomes}
+\begin{enumerate}
+	\item Describe Advection Mathematically
+	\item Analyze 1-dimensional movement using advection equations
+	\item Describe Diffuions mathematically
+	\item Analyze 1-dimensional movement using Fick's law.
+	\item Two dimensional analysis of advention
+\end{enumerate}
+
+\section{Material Transport}
+
+
+\section{Theory of Pollution Movement}
+
+\subsection{Diffusion versus Advection}
+
+\section{R as a Calculator}
+
+
+\section{One Dimensional Diffusion}
+\subsection{Steady-state solution of 2-D PDEs}
+
+within \href{https://cran.r-project.org/web/packages/rootSolve/vignettes/rootSolve.pdf}{\texttt{\textbf{rootSolve}} Package}, has a function, \texttt{steady.2D()} that can efficiently fine the steady-state of 2-dimensional problems.
+
+\begin{equation}
+%\fraction{\deltaC}{\deltat} = \ldots C^2 + pxy
+\end{equation}
+
+a substance C is consumed at a quadratic rate (r dot C2), while dispersing in X- and Y-direction.
+At certain positions (x,y) the substance is produced (rate p).
+
+The model is solved on a square (100*100) grid. There are zero-flux boundary conditions at
+the 4 boundaries.
+
+The term Dx \ldots, 
+
+i.e. it is the negative of the 
+ux gradient, where the ux is due to diffusion. In the numerical approximation fo the 
+ux, the concentration gradient is approximated as the subtraction of two matrices, with the columns or rows shifted (e.g. Conc[2:n,]-Conc[1:(n-1),]).
+
+The flux gradient is then also approximated by subtracting entire matrices (e.g. Flux[2:(n+1),]-Flux[1:(n),]). This is very fast. The zero-flux at the boundaries is imposed by binding a column or row with 0-s.
+
+
+\begin{Schunk}
+\begin{Sinput}
+> #library(rootSolve)
+> diffusion2D <- function(t,conc,par){
++ Conc <- matrix(nr=n,nc=n,data=conc) # vector to 2-D matrix
++ dConc <- -r*Conc*Conc # consumption
++ BND <- rep(1,n) # boundary concentration
++ 
++ # constant production in certain cells
++ dConc[ii]<- dConc[ii]+ p
++ 
++ #diffusion in X-direction; boundaries=imposed concentration
++ 
++ Flux <- -Dx * rbind(rep(0,n),(Conc[2:n,]-Conc[1:(n-1),]),rep(0,n))/dx
++ dConc <- dConc - (Flux[2:(n+1),]-Flux[1:n,])/dx
++ 
++ #diffusion in Y-direction
++ Flux <- -Dy * cbind(rep(0,n),(Conc[,2:n]-Conc[,1:(n-1)]),rep(0,n))/dy
++ dConc <- dConc - (Flux[,2:(n+1)]-Flux[,1:n])/dy
++ 
++ return(list(as.vector(dConc)))
++ }
+\end{Sinput}
+\end{Schunk}
+
+After specifying the values of the parameters, 10 cells on the 2-D grid where there will be
+substance produced are randomly selected (ii).
+
+
+Figure 5: Steady-state solution of the nonlinear 2-Dimensional model
+
+\begin{Schunk}
+\begin{Sinput}
+> # parameters
+> dy <- dx <- 1 # grid size
+> Dy <- Dx <- 1.5 # diffusion coeff, X- and Y-direction
+> r <- 0.01 # 2-nd-order consumption rate (/time)
+> p <- 20 # 0-th order production rate (CONC/t)
+> n <- 100
+> # 10 random cells where substance is produced at rate p
+> ii <- trunc(cbind(runif(10)*n+1,runif(10)*n+1))
+> 
+\end{Sinput}
+\end{Schunk}
+The steady-state is found using function steady.2D. It takes as arguments a.o. the dimensionality
+of the problem (dimens) and lrw=1000000, the length of the work array needed by
+the solver. If this value is set too small, the solver will return with the size needed.
+It takes about 0.5 second to solve this 10000 state variable model.
+
+\begin{Schunk}
+\begin{Sinput}
+> Conc0 <- matrix(nr=n,nc=n,10.)
+> # print(system.time(
+> # not working yet...
+> 
+> #ST3 <- steady.2D(Conc0,func=diffusion2D,parms=NULL,pos=TRUE,dimens=c(n,n), lrw=1000000,atol=1e-10,rtol=1e-10,ctol=1e-1)))
+> 
+\end{Sinput}
+\end{Schunk}
+
+
+The S3 image method is used to generate the steady-state plot.
+
+\begin{Schunk}
+\begin{Sinput}
+> #image(ST3,main="2-D diffusion+production", xlab="x", ylab="y")
+\end{Sinput}
+\end{Schunk}
+
 
 
 
