@@ -58,6 +58,19 @@ where $u = (u_x, u_y, u_z)$ is the velocity field, and $\nabla$ is the del opera
 
 \subsection{Diffusion versus Advection}
 
+Fick's first law relates the diffusive flux to the concentration under the assumption of steady state. It postulates that the flux goes from regions of high concentration to regions of low concentration, with a magnitude that is proportional to the concentration gradient (spatial derivative), or in simplistic terms the concept that a solute will move from a region of high concentration to a region of low concentration across a concentration gradient. In one (spatial) dimension, the law is:
+
+\begin{equation}
+J=-D{\frac {\partial \varphi }{\partial x}}
+\end{equation}
+
+where
+
+J is the "diffusion flux," of which the dimension is amount of substance per unit area per unit time, so it is expressed in such units as $mol\cdot m^{−2}\cdot s^{−1}$. J measures the amount of substance that will flow through a unit area during a unit time interval.
+
+D is the diffusion coefficient or diffusivity. Its dimension is area per unit time, so typical units for expressing it would be $m^2/s$. $\varphi$ (for ideal mixtures) is the concentration, of which the dimension is amount of substance per unit volume. It might be expressed in units of $mol/m^3$.
+x is position, the dimension of which is length. It might thus be expressed in the unit $m$.
+
 \begin{description}
 	\item[What is diffusion?]
 
