@@ -122,7 +122,7 @@ The flux gradient is then also approximated by subtracting entire matrices (e.g.
 
 \begin{Schunk}
 \begin{Sinput}
-> #library(rootSolve)
+> library(rootSolve)
 > diffusion2D <- function(t,conc,par){
 + Conc <- matrix(nr=n,nc=n,data=conc) # vector to 2-D matrix
 + dConc <- -r*Conc*Conc # consumption
@@ -175,7 +175,7 @@ It takes about 0.5 second to solve this 10000 state variable model.
 > # print(system.time(
 > # not working yet...
 > 
-> #ST3 <- steady.2D(Conc0,func=diffusion2D,parms=NULL,pos=TRUE,dimens=c(n,n), lrw=1000000,atol=1e-10,rtol=1e-10,ctol=1e-1)))
+> ST3 <- steady.2D(Conc0,func=diffusion2D,parms=NULL,pos=TRUE,dimens=c(n,n), lrw=1000000,atol=1e-10,rtol=1e-10,ctol=1e-1)
 > 
 \end{Sinput}
 \end{Schunk}
@@ -183,12 +183,14 @@ It takes about 0.5 second to solve this 10000 state variable model.
 
 The S3 image method is used to generate the steady-state plot.
 
+\begin{figure}
 \begin{Schunk}
 \begin{Sinput}
-> #image(ST3,main="2-D diffusion+production", xlab="x", ylab="y")
+> image(ST3,main="2-D diffusion+production", xlab="x", ylab="y")
 \end{Sinput}
 \end{Schunk}
-
+\includegraphics{AdvectionDiffusionProject-CreateImage}
+\end{figure}
 \section{Pre-lab Activity}
 
 \subsection{Pre-assessment: What do you know about diffusion?}

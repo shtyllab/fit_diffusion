@@ -120,7 +120,7 @@ The flux gradient is then also approximated by subtracting entire matrices (e.g.
 
 
 <<2D function, evaluation=F>>=
-#library(rootSolve)
+library(rootSolve)
 diffusion2D <- function(t,conc,par){
 Conc <- matrix(nr=n,nc=n,data=conc) # vector to 2-D matrix
 dConc <- -r*Conc*Conc # consumption
@@ -169,17 +169,18 @@ Conc0 <- matrix(nr=n,nc=n,10.)
 # print(system.time(
 # not working yet...
 
-#ST3 <- steady.2D(Conc0,func=diffusion2D,parms=NULL,pos=TRUE,dimens=c(n,n), lrw=1000000,atol=1e-10,rtol=1e-10,ctol=1e-1)))
+ST3 <- steady.2D(Conc0,func=diffusion2D,parms=NULL,pos=TRUE,dimens=c(n,n), lrw=1000000,atol=1e-10,rtol=1e-10,ctol=1e-1)
 
 @
 
 
 The S3 image method is used to generate the steady-state plot.
 
-<< label=CreateImage >>=
-#image(ST3,main="2-D diffusion+production", xlab="x", ylab="y")
+\begin{figure}
+<< label=CreateImage, fig=TRUE >>=
+image(ST3,main="2-D diffusion+production", xlab="x", ylab="y")
 @
-
+\end{figure}
 \section{Pre-lab Activity}
 
 \subsection{Pre-assessment: What do you know about diffusion?}
