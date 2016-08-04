@@ -27,7 +27,7 @@ C_t = f(\mathrm{advection}_t + \mathrm{dispersion_t})
 
 Of course, this depends on the time from which the contaminant was introduced the the environment. Below, we will further explore how to write out more useful equations for this conceptual idea.
 
-In addition to these two processes, pollutants might react in or with their media. The, their concentration may change with time as part of the breakdown process. For example, organic pollutants, such as pesticides, might react in the surface of leaves, in runoff, in soils or sediments, which might change their fate and transport behavior that we might add a term: 
+In addition to these two processes, pollutants might react in or with their media. Thus, their concentration may change with time as part of the breakdown process. For example, organic pollutants, such as pesticides, might react in the surface of leaves, in runoff, in soils or sediments, which might change their fate and transport behavior that we might add a term: 
 
 \begin{equation}
 C_t = f(\mathrm{advection}_t + \mathrm{dispersion_t} - \mathrm{breakdown}_t)
