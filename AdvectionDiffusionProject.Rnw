@@ -17,9 +17,9 @@
 
 The movement of contaminants through a media (e.g. air, water, and soil) is complex and difficult to predict. 
 
-In general, pollutants move in two ways: advection and dispersion. Advection is the bulk flow of materials that are "carried" by wind patterns, water currents, or groundwater flow paths. Dispersion is the spreading of the chemical via localizied mixing or diffusion. As you might guess, both advection and dispersion depend on the scale of interest, and can be described by a variety of equations.
+In general, pollutants move in two ways: advection and dispersion. Advection is the bulk flow of materials that are "carried" by wind patterns, water currents, or groundwater flow paths. Dispersion is the spreading of the chemical via localizied mixing or diffusion. As you might guess, descriptions of advection and dispersion depend on the scale of interest, and can be described by a variety of equations.
 
-To summarize, we might be able to describe the concentration of a contaiminant:
+We might describe the concentration of a contaminant:
 
 \begin{equation}
 C_t = f(\mathrm{advection}_t + \mathrm{dispersion_t})
