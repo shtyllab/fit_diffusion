@@ -20,6 +20,8 @@ The movement of contaminants through a media (e.g. air, water, and soil) is comp
 
 In general, pollutants move in two ways: advection and dispersion. Advection is the bulk flow of materials that are "carried" by wind patterns, water currents, or groundwater flow paths. Dispersion is the spreading of the chemical via localizied mixing or diffusion. As you might guess, descriptions of advection and dispersion depend on the scale of interest, and can be described by a variety of equations.
 
+NOTE: The term advection sometimes serves as a synonym for convection, but technically, convection covers the sum of transport both by diffusion and by advection. Advective transport describes the movement of some quantity via the bulk flow of a fluid.
+
 We might describe the concentration of a contaminant:
 
 \begin{equation}
@@ -28,7 +30,7 @@ C_t = f(\mathrm{advection}_t + \mathrm{dispersion_t})
 
 Of course, this depends on the time from which the contaminant was introduced the the environment. Below, we will further explore how to write out more useful equations for this conceptual idea.
 
-In addition to these two processes, pollutants might react in or with their media. The, their concentration may change with time as part of the breakdown process. For example, organic pollutants, such as pesticides, might react in the surface of leaves, in runoff, in soils or sediments, which might change their fate and transport behavior that we might add a term: 
+In addition to these two processes, pollutants might react in or with their media. Thus, their concentration may change with time as part of the breakdown process. For example, organic pollutants, such as pesticides, might react in the surface of leaves, in runoff, in soils or sediments, which might change their fate and transport behavior that we might add a term: 
 
 \begin{equation}
 C_t = f(\mathrm{advection}_t + \mathrm{dispersion_t} - \mathrm{breakdown}_t)
@@ -51,11 +53,19 @@ One of the challenges for environmental scientists is to obtain meaningful chemi
 
 \section{Theory of Pollution Movement}
 
+According to Wikipedia, advection can be described as as "velocity vector" and the del operator.
+
+\textbf{Blerta, I sure wish I knew where these terms came from!}
+
 \begin{equation}
 \mathbf{u} \cdot \nabla = u_x \frac{\partial}{\partial x} + u_y \frac{\partial}{\partial y} + u_z \frac{\partial}{\partial z}.
 \end{equation}
 
 where $u = (u_x, u_y, u_z)$ is the velocity field, and $\nabla$ is the del operator (note that Cartesian coordinates are used here).
+
+The rest of the equation is... ???
+
+Apparently, solving this equation is a nightmare!  So, we will come up with an alternative way to predict concentration gradients...
 
 \subsection{Diffusion versus Advection}
 
