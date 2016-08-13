@@ -1,4 +1,5 @@
-\documentclass{article}
+%\documentclass{article}
+\documentclass{tufte-handout}
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{natbib}
@@ -193,14 +194,14 @@ It takes about 0.5 second to solve this 10000 state variable model.
 
 The S3 image method is used to generate the steady-state plot.
 
-\begin{figure}
+\begin{figure*}
 \begin{Schunk}
 \begin{Sinput}
-> image(ST3,main="2-D diffusion+production", xlab="x", ylab="y")
+> image(ST3,main="2-D diffusion+production", xlab="x", ylab="y", las=1)
 \end{Sinput}
 \end{Schunk}
 \includegraphics{AdvectionDiffusionProject-CreateImage}
-\end{figure}
+\end{figure*}
 \section{Pre-lab Activity}
 
 \subsection{Pre-assessment: What do you know about diffusion?}

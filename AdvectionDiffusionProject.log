@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  4 AUG 2016 22:35
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  12 AUG 2016 20:23
 entering extended mode
  %&-line parsing enabled.
 **AdvectionDiffusionProject.tex
@@ -11,33 +11,136 @@ erman, danish, esperanto, spanish, catalan, galician, estonian, farsi, finnish,
 us, indonesian, icelandic, italian, latin, mongolian, dutch, norsk, polish, por
 tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish, 
 turkish, ukenglish, ukrainian, loaded.
+(/usr/share/texmf/tex/latex/tufte-latex/tufte-handout.cls
+Document Class: tufte-handout 2015/06/21 v3.5.2 Tufte-handout class
+(/usr/share/texmf/tex/latex/tufte-latex/tufte-common.def
+File: tufte-common.def 2015/06/21 v3.5.2 Common code for the Tufte-LaTeX styles
+
+
+(/usr/share/texmf/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2006/11/18 v2.5f package option processing (HA)
+
+(/usr/share/texmf/tex/latex/xkeyval/xkeyval.tex
+\XKV@toks=\toks14
+\XKV@depth=\count79
+File: xkeyval.tex 2006/11/18 v2.5f key=value parser (HA)
+
+(/usr/share/texmf/tex/latex/xkeyval/keyval.tex)))
+(/usr/share/texmf/tex/latex/xifthen/xifthen.sty
+Package: xifthen 2006/03/25 v1.1.1.1 Extended ifthen features
+
+(/usr/share/texmf/tex/latex/etex/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count80
+)
+(/usr/share/texmf/tex/latex/tools/calc.sty
+Package: calc 2005/08/06 v4.2 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count81
+\calc@Bcount=\count82
+\calc@Adimen=\dimen102
+\calc@Bdimen=\dimen103
+\calc@Askip=\skip41
+\calc@Bskip=\skip42
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count83
+\calc@Cskip=\skip43
+)
+(/usr/share/texmf/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf/tex/latex/ltxmisc/ifmtarg.sty
+Package: ifmtarg 2000/03/24 v1.2 check for an empty argument
+))
+(/usr/share/texmf/tex/latex/hardwrap/hardwrap.sty
+Package: hardwrap 2011/02/12 v0.2 Hard wrap messages
+
+(/usr/share/texmf/tex/latex_2015/ifplatform/ifplatform.sty
+Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
+
+(/usr/share/texmf/tex/latex_2015/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf/tex/latex_2015/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf/tex/latex/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf/tex/latex/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texmf/tex/latex/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive disabled, because
+(pdftexcmds)             \pdfprimitive is broken until pdfTeX 1.40.4.
+Package pdftexcmds Info: \pdf@primitive is not available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texmf/tex/latex/oberdiek/catchfile.sty
+Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
+
+(/usr/share/texmf/tex/latex/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))
+
+Package ifplatform Warning: 
+    shell escape is disabled, so I can only detect \ifwindows.
+
+) (/usr/share/texmf/tex/latex/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\hw@charcount=\count84
+\hw@wordcount=\count85
+\hw@maxprintline=\count86
+)
+Class tufte-handout Info: Loading the base class `article'
+
 (/usr/share/texmf/tex/latex/base/article.cls
 Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
 (/usr/share/texmf/tex/latex/base/size10.clo
 File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
+\c@part=\count87
+\c@section=\count88
+\c@subsection=\count89
+\c@subsubsection=\count90
+\c@paragraph=\count91
+\c@subparagraph=\count92
+\c@figure=\count93
+\c@table=\count94
+\abovecaptionskip=\skip44
+\belowcaptionskip=\skip45
+\bibindent=\dimen104
+)
+(/usr/share/texmf/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2005/01/22 v2.6 Sectioning titles
+\ttl@box=\box26
+\beforetitleunit=\skip46
+\aftertitleunit=\skip47
+\ttl@plus=\dimen105
+\ttl@minus=\dimen106
+\titlewidth=\dimen107
+\titlewidthlast=\dimen108
+\titlewidthfirst=\dimen109
+)
+(/usr/share/texmf/tex/latex/titlesec/titletoc.sty
+Package: titletoc 2005/01/22 v1.5 TOC entries
 )
 (/usr/share/texmf/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2007/02/07 v6.75r Hypertext links for LaTeX
-
-(/usr/share/texmf/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks14
-)
-\@linkdim=\dimen103
-\Hy@linkcounter=\count87
-\Hy@pagecounter=\count88
+\@linkdim=\dimen110
+\Hy@linkcounter=\count95
+\Hy@pagecounter=\count96
 
 (/usr/share/texmf/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2007/02/07 v6.75r Hyperref: PDFDocEncoding definition (HO)
@@ -49,6 +152,12 @@ File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 Package: kvoptions 2006/08/22 v2.4 Connects package keyval with LaTeX options (
 HO)
 )
+Package hyperref Info: Option `unicode' set `true' on input line 2238.
+
+(/usr/share/texmf/tex/latex/hyperref/puenc.def
+File: puenc.def 2007/02/07 v6.75r Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `hyperfootnotes' set `false' on input line 2238.
 Package hyperref Info: Hyper figures OFF on input line 2288.
 Package hyperref Info: Link nesting OFF on input line 2293.
 Package hyperref Info: Hyper index ON on input line 2296.
@@ -62,9 +171,9 @@ Package hyperref Info: Bookmarks ON on input line 2444.
 Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 2599.
-\Fld@menulength=\count89
-\Field@Width=\dimen104
-\Fld@charsize=\dimen105
+\Fld@menulength=\count97
+\Field@Width=\dimen111
+\Fld@charsize=\dimen112
 \Choice@toks=\toks15
 \Field@toks=\toks16
 Package hyperref Info: Hyper figures OFF on input line 3102.
@@ -72,120 +181,160 @@ Package hyperref Info: Link nesting OFF on input line 3107.
 Package hyperref Info: Hyper index ON on input line 3110.
 Package hyperref Info: backreferencing OFF on input line 3117.
 Package hyperref Info: Link coloring OFF on input line 3122.
-\Hy@abspage=\count90
-\c@Item=\count91
-\c@Hfootnote=\count92
+\Hy@abspage=\count98
+\c@Item=\count99
 )
 *hyperref using default driver hpdftex*
 (/usr/share/texmf/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2007/02/07 v6.75r Hyperref driver for pdfTeX
-\Fld@listcount=\count93
+\Fld@listcount=\count100
 )
-(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
-\@mathmargin=\skip43
+(/usr/share/texmf/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2003/03/25 v2.04 ragged2e Package (MS)
 
-For additional information on amsmath, use the `?' option.
-(/usr/share/texmf/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01
+(/usr/share/texmf/tex/latex/everysel/everysel.sty
+Package: everysel 1999/06/08 v1.03 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip48
+\RaggedLeftLeftskip=\skip49
+\RaggedRightLeftskip=\skip50
+\CenteringRightskip=\skip51
+\RaggedLeftRightskip=\skip52
+\RaggedRightRightskip=\skip53
+\CenteringParfillskip=\skip54
+\RaggedLeftParfillskip=\skip55
+\RaggedRightParfillskip=\skip56
+\JustifyingParfillskip=\skip57
+\CenteringParindent=\skip58
+\RaggedLeftParindent=\skip59
+\RaggedRightParindent=\skip60
+\JustifyingParindent=\skip61
+)
+(/usr/share/texmf/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks17
-\ex@=\dimen106
-))
-(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen107
+(/usr/share/texmf/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2007/01/10 v1.2 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
 )
-(/usr/share/texmf/tex/latex/amsmath/amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
-)
-\inf@bad=\count94
-LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count95
-\leftroot@=\count96
-LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count97
-\DOTSCASE@=\count98
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
-\big@size=\dimen108
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count99
-\c@MaxMatrixCols=\count100
-\dotsspace@=\muskip11
-\c@parentequation=\count101
-\dspbrk@lvl=\count102
-\tag@help=\toks18
-\row@=\count103
-\column@=\count104
-\maxfields@=\count105
-\andhelp@=\toks19
-\eqnshift@=\dimen109
-\alignsep@=\dimen110
-\tagshift@=\dimen111
-\tagwidth@=\dimen112
-\totwidth@=\dimen113
-\lineht@=\dimen114
-\@envbody=\toks20
-\multlinegap=\skip44
-\multlinetaggap=\skip45
-\mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
-)
-(/usr/share/texmf/tex/latex/natbib/natbib.sty
-Package: natbib 2007/02/05 8.0 (PWD)
-\bibhang=\skip46
-\bibsep=\skip47
-LaTeX Info: Redefining \cite on input line 602.
-\c@NAT@ctr=\count106
-)
-(/usr/share/R/texmf/tex/latex/Sweave.sty
-Package: Sweave 
+\Gm@cnth=\count101
+\Gm@cntv=\count102
+\c@Gm@tempcnt=\count103
+\Gm@bindingoffset=\dimen113
+\Gm@wd@mp=\dimen114
+\Gm@odd@mp=\dimen115
+\Gm@even@mp=\dimen116
+\Gm@layoutwidth=\dimen117
+\Gm@layoutheight=\dimen118
+\Gm@layouthoffset=\dimen119
+\Gm@layoutvoffset=\dimen120
+\Gm@dimlist=\toks17
 
-(/usr/share/texmf/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+(/usr/share/texmf/tex/latex/geometry/geometry.cfg))
+(/usr/share/texmf/tex/latex_2015/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count104
+\cp@tempcnt=\count105
 )
-(/usr/share/texmf/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+\@tufte@overhang=\skip62
+\@tufte@fullwidth=\skip63
+\@tufte@caption@fill=\skip64
 
-(/usr/share/texmf/tex/latex/graphics/graphics.sty
-Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf/tex/latex/paralist/paralist.sty
+Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
+\pltopsep=\skip65
+\plpartopsep=\skip66
+\plitemsep=\skip67
+\plparsep=\skip68
+\pl@lab=\toks18
+)
+(/usr/share/texmf/tex/latex/textcase/textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+(/usr/share/texmf/tex/latex/microtype/letterspace.sty
+Package: letterspace 2007/01/21 v1.0 Robust letterspacing (RS)
+LaTeX Info: Redefining \lsstyle on input line 135.
+LaTeX Info: Redefining \lslig on input line 166.
+LaTeX Info: Redefining \textls on input line 180.
+\MT@lskern=\dimen121
+)
+(/usr/share/texmf/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
 
-(/usr/share/texmf/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-(/usr/share/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
-)
-Package graphics Info: Driver file: pdftex.def on input line 90.
+Package xcolor Info: Package option `usenames' ignored on input line 216.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
 
 (/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
-\Gread@gobject=\count107
-))
-\Gin@req@height=\dimen115
-\Gin@req@width=\dimen116
+\Gread@gobject=\count106
 )
-(/usr/share/texmf/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 1998/07/17
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 
-Style option: `fancyvrb' v2.6, with DG/SPQR fixes <1998/07/17> (tvz)
-\FV@CodeLineNo=\count108
-\FV@InFile=\read1
-\FV@TabBox=\box28
-\c@FancyVerbLine=\count109
-\FV@StepNumber=\count110
-\FV@OutFile=\write3
+(/usr/share/texmf/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)
+(/usr/share/texmf/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2007/01/21 v2.11 Predefined colors according to SVG 1.1 (UK)
+))
+(/usr/share/texmf/tex/latex/natbib/natbib.sty
+Package: natbib 2007/02/05 8.0 (PWD)
+\bibhang=\skip69
+\bibsep=\skip70
+LaTeX Info: Redefining \cite on input line 602.
+\c@NAT@ctr=\count107
+)
+(/usr/share/texmf/tex/latex/natbib/bibentry.sty
+Package: bibentry 2000/06/20 1.4 (PWD)
+)
+No file AdvectionDiffusionProject.bbl.
+\c@@tufte@num@bibkeys=\count108
+(/usr/share/texmf/tex/latex/sauerj/optparams.sty
+Package: optparams 2004/08/14 v0.9 multiple optional parameters in macros
+)
+\@tufte@sidenote@vertical@offset=\skip71
 
-No file fancyvrb.cfg.
-) (/usr/share/texmf/tex/latex/base/textcomp.sty
+(/usr/share/texmf/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+\@tufte@margin@floatbox=\box27
+\@tufte@figure@box=\box28
+\@tufte@caption@box=\box29
+\@tufte@caption@vertical@offset=\skip72
+\@tufte@float@contents@width=\skip73
+
+(/usr/share/texmf/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
+)
+(/usr/share/texmf/tex/latex/psnfss/helvet.sty
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/share/texmf/tex/latex_2015/bera/beramono.sty
+Package: beramono 2004/01/31 (WaS)
+)
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texmf/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -252,7 +401,157 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
 )
-(/usr/share/texmf/tex/latex/base/fontenc.sty
+(/usr/share/texmf/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip74
+\f@ncyO@elh=\skip75
+\f@ncyO@erh=\skip76
+\f@ncyO@olh=\skip77
+\f@ncyO@orh=\skip78
+\f@ncyO@elf=\skip79
+\f@ncyO@erf=\skip80
+\f@ncyO@olf=\skip81
+\f@ncyO@orf=\skip82
+)
+\tufteskipamount=\skip83
+
+(/usr/share/texmf/tex/latex/tools/multicol.sty
+Package: multicol 2006/05/18 v1.6g multicolumn formatting (FMi)
+\c@tracingmulticols=\count109
+\mult@box=\box30
+\multicol@leftmargin=\dimen122
+\c@unbalance=\count110
+\c@collectmore=\count111
+\doublecol@number=\count112
+\multicoltolerance=\count113
+\multicolpretolerance=\count114
+\full@width=\dimen123
+\page@free=\dimen124
+\premulticols=\dimen125
+\postmulticols=\dimen126
+\multicolsep=\skip84
+\multicolbaselineskip=\skip85
+\partial@page=\box31
+\last@line=\box32
+\mult@rightbox=\box33
+\mult@grightbox=\box34
+\mult@gfirstbox=\box35
+\mult@firstbox=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\c@columnbadness=\count115
+\c@finalcolumnbadness=\count116
+\last@try=\dimen127
+\multicolovershoot=\dimen128
+\multicolundershoot=\dimen129
+\mult@nat@firstbox=\box54
+\colbreak@box=\box55
+)))
+(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip86
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks19
+\ex@=\dimen130
+))
+(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen131
+)
+(/usr/share/texmf/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count117
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count118
+\leftroot@=\count119
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count120
+\DOTSCASE@=\count121
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box56
+\strutbox@=\box57
+\big@size=\dimen132
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count122
+\c@MaxMatrixCols=\count123
+\dotsspace@=\muskip11
+\c@parentequation=\count124
+\dspbrk@lvl=\count125
+\tag@help=\toks20
+\row@=\count126
+\column@=\count127
+\maxfields@=\count128
+\andhelp@=\toks21
+\eqnshift@=\dimen133
+\alignsep@=\dimen134
+\tagshift@=\dimen135
+\tagwidth@=\dimen136
+\totwidth@=\dimen137
+\lineht@=\dimen138
+\@envbody=\toks22
+\multlinegap=\skip87
+\multlinetaggap=\skip88
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/R/texmf/tex/latex/Sweave.sty
+Package: Sweave 
+
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 90.
+)
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+(/usr/share/texmf/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 1998/07/17
+
+Style option: `fancyvrb' v2.6, with DG/SPQR fixes <1998/07/17> (tvz)
+\FV@CodeLineNo=\count129
+\FV@InFile=\read1
+\FV@TabBox=\box58
+\c@FancyVerbLine=\count130
+\FV@StepNumber=\count131
+\FV@OutFile=\write3
+
+No file fancyvrb.cfg.
+) (/usr/share/texmf/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
 (/usr/share/texmf/tex/latex/base/t1enc.def
@@ -276,28 +575,30 @@ File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))) (./AdvectionDiffusionProject.aux)
 \openout1 = `AdvectionDiffusionProject.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 11.
 
 (/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 10.
-Package hyperref Info: Link coloring OFF on input line 10.
+LaTeX Font Info:    ... okay on input line 11.
+Package hyperref Info: Link coloring OFF on input line 11.
 
 (/usr/share/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
@@ -305,91 +606,181 @@ Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
 (/usr/share/texmf/tex/latex/oberdiek/refcount.sty
 Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
 )
-\c@section@level=\count111
+\c@section@level=\count132
 )
-LaTeX Info: Redefining \ref on input line 10.
-LaTeX Info: Redefining \pageref on input line 10.
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
 
 (./AdvectionDiffusionProject.out) (./AdvectionDiffusionProject.out)
 \@outlinefile=\write4
 \openout4 = `AdvectionDiffusionProject.out'.
 
+LaTeX Info: Redefining \selectfont on input line 11.
 
-(./AdvectionDiffusionProject-concordance.tex) [1
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside asymmetric 
+* h-part:(L,W,R)=(72.26999pt, 312.0pt, 230.02501pt)
+* v-part:(T,H,B)=(72.26999pt, 616.0pt, 106.7pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=312.0pt
+* \textheight=616.0pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-42.0pt
+* \headheight=14.0pt
+* \headsep=28.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=144.0pt
+* \marginparsep=24.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\langwohyphens=\language48
+(./AdvectionDiffusionProject-concordance.tex)
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 28.
+
+
+(/usr/share/texmf/tex/latex/psnfss/ot1pplx.fd
+File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
+)
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 28.
+
+
+(/usr/share/texmf/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 28.
+
+
+(/usr/share/texmf/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 28.
+
+
+(/usr/share/texmf/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 28.
+
+
+(/usr/share/texmf/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+) [1
 
 {/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Missing character: There is no â in font cmr7!
-Missing character: There is no ˆ in font cmr7!
-Missing character: There is no ’ in font cmr7!
-Missing character: There is no â in font cmr7!
-Missing character: There is no ˆ in font cmr7!
-Missing character: There is no ’ in font cmr7!
+Missing character: There is no â in font pplr9t!
+Missing character: There is no ˆ in font pplr9t!
+Missing character: There is no ’ in font pplr9t!
+Missing character: There is no â in font pplr9t!
+Missing character: There is no ˆ in font pplr9t!
+Missing character: There is no ’ in font pplr9t!
 
-Overfull \hbox (0.14528pt too wide) in paragraph at lines 92--93
-\T1/aer/m/n/10 trolled by the size of the macro-molecule as de-scribed by the S
-tokes-Einstein
+Overfull \hbox (55.17805pt too wide) in paragraph at lines 103--103
+[] 
  []
 
 
-Overfull \hbox (75.56448pt too wide) in paragraph at lines 102--102
-[]
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
+ 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
-
- []
-
-LaTeX Font Info:    Try loading font information for T1+aett on input line 112.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 113.
 
 (/usr/share/texmf/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
 
 LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 112.
+(Font)              using `T1/aett/m/n' instead on input line 113.
 
 [3] [4]
-<AdvectionDiffusionProject-CreateImage.pdf, id=144, 433.62pt x 433.62pt>
+Overfull \hbox (9.02588pt too wide) in paragraph at lines 178--182
+\T1/aer/m/n/10 ments a.o. the di-men-sion-al-ity of the prob-lem (di-mens) and 
+lrw=1000000, 
+ []
+
+<AdvectionDiffusionProject-CreateImage.pdf, id=107, 433.62pt x 433.62pt>
 File: AdvectionDiffusionProject-CreateImage.pdf Graphic file (type pdf)
 
-<use AdvectionDiffusionProject-CreateImage.pdf> [5 <./AdvectionDiffusionProject
--CreateImage.pdf>]
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 250.
+<use AdvectionDiffusionProject-CreateImage.pdf> [5] [6 <./AdvectionDiffusionPro
+ject-CreateImage.pdf>]
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 251.
 
  (/usr/share/R/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 250.
- [6] [7] [8]
-[9] [10] (./AdvectionDiffusionProject.aux)
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 251.
+ [7] [8]
+[9]
+Overfull \hbox (8.57156pt too wide) detected at line 414
+[]\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 C[] \OMS/zplm/m/n/10 ^^@ \OML/zplm/m/it/1
+0 C[]\OT1/zplm/m/n/10 ) = [[][](\OML/zplm/m/it/10 C[] \OMS/zplm/m/n/10 ^^@ \OML
+/zplm/m/it/10 C[]\OT1/zplm/m/n/10 ) + [](\OML/zplm/m/it/10 C[] \OMS/zplm/m/n/10
+ ^^@ \OT1/pplx/m/n/10 2\OML/zplm/m/it/10 C[] \OT1/zplm/m/n/10 + \OML/zplm/m/it/
+10 C[]\OT1/zplm/m/n/10 )]
+ []
+
+
+Overfull \hbox (10.30136pt too wide) detected at line 417
+[]\OML/zplm/m/it/10 C[] \OT1/zplm/m/n/10 = []\OML/zplm/m/it/10 C[] \OMS/zplm/m/
+n/10 ^^@ []\OML/zplm/m/it/10 C[] \OT1/zplm/m/n/10 + [](\OML/zplm/m/it/10 C[] \O
+MS/zplm/m/n/10 ^^@ \OML/zplm/m/it/10 C[]\OT1/zplm/m/n/10 ) + [](\OML/zplm/m/it/
+10 C[] \OT1/zplm/m/n/10 + \OML/zplm/m/it/10 C[]\OT1/zplm/m/n/10 )
+ []
+
+[10]
+
+Package bibentry Warning: You have used \nobibliography* 
+(bibentry)                without a following \bibliography.
+(bibentry)                You may not be able to run BibTeX.
+
+(./AdvectionDiffusionProject.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 4600 strings out of 256214
- 61659 string characters out of 1917000
- 117519 words of memory out of 1500000
- 7732 multiletter control sequences out of 10000+200000
- 28801 words of font info for 68 fonts, out of 1200000 for 2000
+ 8684 strings out of 256214
+ 116991 string characters out of 1917000
+ 201228 words of memory out of 1500000
+ 11614 multiletter control sequences out of 10000+200000
+ 53020 words of font info for 105 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 35i,8n,36p,526b,466s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 46i,12n,45p,526b,491s stack positions out of 5000i,500n,6000p,200000b,15000s
  </home/CAMPUS/mwl04747/.texlive2007/texmf-var/fonts/pk/ljfour/jknappen/ec/tc
-rm1000.600pk></usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/te
-xmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/
-cmex10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texm
-f/fonts/type1/bluesky/cm/cmmi5.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmm
-i7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fon
-ts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pf
-b></usr/share/texmf/fonts/type1/bluesky/cm/cmr7.pfb></usr/share/texmf/fonts/typ
-e1/bluesky/cm/cmsltt10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb>
-</usr/share/texmf/fonts/type1/bluesky/cm/cmsy7.pfb></usr/share/texmf/fonts/type
-1/bluesky/cm/cmtt10.pfb>
-Output written on AdvectionDiffusionProject.pdf (10 pages, 180537 bytes).
+rm1000.600pk>{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fo
+nts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmcsc1
+0.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmex10.pfb></usr/share/texmf/fon
+ts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.p
+fb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/ty
+pe1/bluesky/cm/cmsltt10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb
+></usr/share/texmf/fonts/type1/bluesky/cm/cmti10.pfb></usr/share/texmf/fonts/ty
+pe1/bluesky/cm/cmti12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmtt10.pfb><
+/usr/share/texmf/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texmf/fonts/
+type1/public/mathpazo/fplmri.pfb></usr/share/texmf/fonts/type1/urw/palatino/upl
+b8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf
+/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on AdvectionDiffusionProject.pdf (10 pages, 210232 bytes).
 PDF statistics:
- 271 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 131072)
- 218 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 249 PDF objects out of 1000 (max. 8388607)
+ 71 named destinations out of 1000 (max. 131072)
+ 138 words of extra memory for PDF output out of 10000 (max. 10000000)
 
