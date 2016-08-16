@@ -1,0 +1,254 @@
+%\documentclass{article}
+\documentclass{tufte-handout}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{natbib}
+
+\author{Blerta and Marc and others! :-)}
+\title{Measuring and Modelling Diffusion}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\maketitle
+
+\section{Abstract}
+\noindent The movement of compounds in the environment is driven by two processes, advection and diffusion. Of course, these processes occur in three dimensions, but for this class we'll begin with one dimensional processes before getting to more complecated examples.
+
+\section{Introduction}
+
+The movement of contaminants through a media (e.g. air, water, and soil) is complex and difficult to predict. 
+
+In general, pollutants move in two ways: advection and dispersion. Advection is the bulk flow of materials that are "carried" by wind patterns, water currents, or groundwater flow paths. Dispersion is the spreading of the chemical via localizied mixing or diffusion. As you might guess, descriptions of advection and dispersion depend on the scale of interest, and can be described by a variety of equations.
+
+
+\section{Pre-lab Activity}
+
+\subsection{Pre-assessment: What do you know about diffusion?}
+
+\subsection{Conceptual Models of Diffusion}
+
+
+\subsection{Preparing for the Lab}
+
+What can you do to prepare for the lab?  Great question. 
+
+I have been thinking about this for a few weeks and have some suggestions.
+
+\begin{enumerate}
+	\item Decide how you will make the standard curve before coming to class.
+	\item Review the recipe to make the agarose and write it out in your laboratory book.
+	\item Decide how you will sample your agar (spatially) and 
+	\item create some tables to record the data in the lab book before class.
+
+	\item The bulk density of the agar is 1.5 g/ml. That means for every 1 gram, you will have a volume of 0.66 mL.  You should check this to see how I get this.  You will be diluting this volume as you heat them to get the dye into the solution. How will you back calculate the concentration of the dye given a dilution effect in the test tubes that  you melt the agar in?
+
+	\item What are the possible interferences that you should consider?  IMPORTANT: What blanks should you be sure to do?
+\end{enumerate}
+
+
+\section{Laboratory Methods}
+
+\subsection{Preparing Agarose and Sampling Methods}
+
+Agarose gels are prepared by adding the desired volume... 
+
+The resulting slurry was heated to 90$\circ$C until complete dissolution of agarose, and then slowly cooled. Before gelation, the viscous agarose solution was cast, then slowly cooled at room temperature. The cast are in circular petri dishes (40 cm in diameter).
+
+%of 0.1 M PBS buffer (phosphate-buffered saline, Sigma) to the measured amount of agarose powder (type VII: low gelling temperature, Sigma). Once the gel was formed, it was immersed in 0.1 M PBS solution and allowed to equilibrate. 
+
+%To calculate the fiber radius (Ogston et al., 1973) or the permeability (Phillips et al., 1989), the volume fraction of fibers for agarose gels must be known. The volume fraction of agarose fibers, f, was obtained with the following formula:
+
+%f 5 cagarose/~ragarosevagarose! (1)
+
+%where cagarose is the concentration of agarose in the gel (w/v), ragarose is the dry agarose density (1.64 g/ml; Laurent, 1967); and vagarose is the mass fraction of agarose in a fiber, calculated to be 0.625 (Johnson et al., 1995). Equation 1 takes into account the internally bound water in each fiber that is not accessible to macromolecules. From Eq. 1, the volume fraction of fibers of a 2\% agarose gel is f 5 0.0195.
+
+Samples will be taken from the petri dishes with an exacto knife. Try to sample 1 cm$^3$. Record the two distances of the agar sampled -- and weight sample to obtain a volume (via density).
+
+\subsection{Equipment}
+ 
+\begin{itemize}
+	\item Precision Balances
+	\item 20 ml pipettes
+	\item 50 ml beaker
+	\item	Weighing boats
+	\item	Distilled water
+	\item Saran wrap
+	\item Spec 20?
+\end{itemize}
+	
+
+\section{Previous Results}
+
+The following are images of notes from a previous lab: I still need to work on translating these into something I can translate. These are over 5 years old and because the results were so ambiguous, I think I never got around to writing this out.
+
+\begin{figure}
+%\includegraphics{../IMG_0578.jpg}
+%	\caption{In my first experiment, we did a circle, but I couldn't figure out how to sample the agar -- which is melted and we measure the concentration of the dye. It seemed to me that we should sample equal volumes, but that got really hard to figure out because the ones at outside got to be rather narrow and hard to cut. Of course, we can normalize the volume with mass base on the density of the agarose.}
+	\label{fig:IMG_0578}
+\end{figure}
+
+\begin{figure}
+	%\includegraphics{../IMG_0576.jpg}
+%	\caption{The dye was placed in the holes in the agarose --- with time, the dye spread out and I have drawn pictures of various sampling locations that might be sampled. Which ever location, The measure the distance (both ends) of the cube should be measured---I think. I suspect the calculation will depend on selecting an appropriate range to the limits of for integration.}
+	\label{fig:IMG_0576}
+\end{figure}
+
+\begin{figure}
+%\includegraphics{../IMG_0579.jpg}
+%	\caption{This image shows how we melted the (low melting point) argarose into a test tube --- that was also the same size as a cuvette. The cuvette was then put into a Spec 20 (tuned to maasure the absorbance of the dye). I also needed to figure out the concentration dilution with distance relative to the amount put it. I'd like to develop an easy R model for students to follow so that can do that}
+	\label{fig:IMG_0579}
+\end{figure}
+
+
+\begin{figure}
+%\includegraphics{../IMG_0577.jpg}
+%	\caption{Finally, this is what I expected the results to look like. But I think this was a brain storm with students --- and we found nothing like this. I think the graph on the left is at $T_0$ and then $T_{final}$. The one on the right is an acknowledgment that the dye's origin would get less concentrated with time. And then I wondered if we needed to capture both $T_0$ and then $T_{final}$.}
+	\label{fig:IMG_0577}
+\end{figure}
+
+Here are the results: without the $T_0$ I was completely lost of how to deal with this. But in reality, these are the kind of data we get with groundwater sampling...so, it must be trivial!
+
+
+\begin{table}
+	\begin{tabular}{llc} \hline
+Conc		&		Distance from Center	&	Mass \\ \hline\hline
+0.035		& 	1				& 5		\\
+0.019		&		7				& 5.2 \\
+0.001		& 	11			&	5.3	\\
+0.001	  & 	15			&	4.8	\\ \hline
+	\end{tabular}
+	\caption{Results from a Test}
+	\label{tab:ResultsFromATest}
+\end{table}
+
+\subsection{Variations on the Theme}
+
+I wonder if we tilt the petri dishes?  This would create a preferential flow down gradient. Perhaps a slight tilt?
+
+
+
+
+
+\section{Assessment}
+
+
+\section{Diffusion Derivation}
+
+\begin{itemize}
+
+\item[a.) ]
+From 9.3, Special Case 2, we know that if $A(x,t) = \bar{A}(x) \neq 0$ (if area does not change with time), then the equation can be written as
+\begin{equation}
+\frac{\partial c(x,t)}{\partial t} = - \frac{1}{\bar{A}(x)}\frac{\partial}{\partial x} [J(x,t)\bar{A}(x)] \pm \sigma(x,t)
+\end{equation}
+We now need to find an equation for $\bar{A}(x)$. Since arc length equals radius times angle, we get 
+\begin{equation}
+\bar{A}(r) = \theta r h
+\end{equation}
+ where $\theta$ is the angle of the arc, $r$ is radial distance, and $h$ is height of the section.
+Therefore we get the equation
+\begin{equation}
+\frac{\partial c(r,t)}{\partial t} = - \frac{1}{\theta r h}\frac{\partial}{\partial r} [J(r,t)\theta r h] \pm \sigma(r,t)
+\end{equation}
+Since $\theta$ and $h$ are constants, we can factor them out to get
+\begin{equation}
+\frac{\partial c(r,t)}{\partial t} = - \frac{1}{r}\frac{\partial}{\partial r} [J(r,t)r] \pm \sigma(r,t)
+\end{equation}
+
+\item[b) ]
+Extending the principle applied in part (a), we first need to find $\bar{A}(R)$. Since $\theta$ is small, we can approximate cross sectional area by taking horizontal arc length times vertical arc length. Therefore we get the equation
+\begin{equation}
+\bar{A}(R) = \theta_1 \theta_2 R^2
+\end{equation}
+where $\theta_1$ is the horizontal angle of the arc, $\theta_2$ is the vertical angle of the arc, and $R$ is radial distance. Combining this with equation (1) from above, we get
+\begin{equation}
+\frac{\partial c(R,t)}{\partial t} = - \frac{1}{\theta_1 \theta_2 R^2}\frac{\partial}{\partial R} [J(R,t)\theta_1 \theta_2 R^2] \pm \sigma(R,t)
+\end{equation}
+Since $\theta_1$ and $\theta_2$ are constants, we can simplify the equation as such:
+\begin{equation}
+\frac{\partial c(R,t)}{\partial t} = - \frac{1}{R^2}\frac{\partial}{\partial R} [J(R,t)R^2] \pm \sigma(R,t)
+\end{equation}
+
+\item[c )]
+Part A: In order to obtain the equations in 9.5, we apply Fick's law:
+\begin{equation}
+J = -\mathcal{D} \nabla c
+\end{equation}
+In this case, we use the one-dimensional version:
+\begin{equation}
+J = - \mathcal{D} \frac{\partial c}{\partial x}
+\end{equation}
+Applying this to equation (4), we get
+\begin{equation}
+\frac{\partial c(r,t)}{\partial t} =  \frac{1}{r}\frac{\partial}{\partial r} [\mathcal{D} \frac{\partial c}{\partial r} r] \pm \sigma(r,t)
+\end{equation}
+Simplifying, and assuming that no particles are created or eliminated at the source, we get:
+\begin{equation}
+\frac{\partial c(r,t)}{\partial t} =  \frac{\mathcal{D}}{r}\frac{\partial}{\partial r} ( \frac{\partial c}{\partial r} r)
+\end{equation}
+\bigskip
+Part B: Once again, we apply Fick's law in one dimension to get
+\begin{equation}
+\frac{\partial c(R,t)}{\partial t} =  \frac{1}{R^2}\frac{\partial}{\partial R} [\mathcal{D} \frac{\partial c}{\partial R} R^2] \pm \sigma(R,t)
+\end{equation}
+We again simplify, assuming no particles are created or destroyed at the source.
+\begin{equation}
+\frac{\partial c(R,t)}{\partial t} =  \frac{\mathcal{D}}{R^2}\frac{\partial}{\partial R} (\frac{\partial c}{\partial R} R^2)
+\end{equation}
+
+\end{itemize}
+
+\section{Chang 1997 Key Points}
+\subsection{Data}
+\begin{itemize}
+\item Size of halos measured with a ruler over constant time intervals
+\item Experiment repeated three times to calculate average values used in model
+\end{itemize}
+\subsection{Methodology}
+\begin{itemize}
+\item Mathematical model formed using Fick's law
+\item c(r,t) = lipase concentration as a function of time and radial distance
+\item Used regression analysis to fit hindered diffusion coefficients and threshold values of lipase concentration as parameters. The finite difference method outlined in Constantinides, 1987 was used specifically.
+\item Amount of lipase in plate at each time calculated by numerical integration. The total amount of lipase varied by 2.5\%, confirming the appropriateness of the mathematical model used. 
+\end{itemize}
+
+\section{Discretization}
+
+% Fick's law
+Fick's second law of molecular diffusion, expressed in cylindrical coordinates. 
+\begin{align*}
+\frac{\partial C}{\partial t} &= D \Delta^2 C\\
+&= D(\frac{1}{r} \frac{\partial C}{\partial r} + \frac{\partial^2 C}{\partial r^2})
+\end{align*}
+Initial conditions:
+\begin{equation}
+\begin{cases} 
+C=C_0  &\mbox{for } R_w < r < R_r\\
+C=0 &\mbox{for } r<R_w \ \& \ R_r < r 
+\end{cases}
+\end{equation}
+where D is the effective hindered diffusion coefficient, $C_0$ is the feed enzyme concentration, $R_w$ is the radius of the well, and $R_r$ is the outer radius of the absorption ring. The lipase concentration as a function of time and radial distance can be solved using the finite difference method. 
+\begin{equation}
+\frac{1}{\Delta t} (C_{i,j+1} - C_{i,j}) = [\frac{1}{i \Delta r} \frac{D}{2 \Delta r}(C_{i+1,j} - C_{i-1,j}) + \frac{D}{\Delta r^2}(C_{i+1,j}-2C_{i,j} + C_{i-1,j})]
+\end{equation}
+\begin{equation}
+\frac{1}{\Delta t}C_{i,j+1} = \frac{1}{\Delta t}C_{i,j} - \frac{2D}{\Delta r^2}C_{i,j}+\frac{D}{2i\Delta r^2}(C_{i+1,j}-C_{i-1,j})+\frac{D}{\Delta r^2}(C_{i+1,j}+C_{i-1,j})
+\end{equation}
+\begin{equation}
+C_{i,j+1} = (1-\frac{2D\Delta t}{\Delta r^2})C_{i,j} + \frac{D \Delta t}{\Delta r^2}[(\frac{1}{2i}+1)C_{i+1,j}-(\frac{1}{2i}-1)C_{i-1,j}]
+\end{equation}
+For convergence, to hold:
+\begin{equation}
+\frac{D \Delta t}{\Delta r^2} \leq \frac{1}{2}
+\end{equation}
+Lastly, the amount of lipase can be calculated using
+\begin{equation}
+A = \int_{R_w}^{R_r} 2 \pi r l C(r) \ dr
+\end{equation}
+where $A$ is the total amount of lipase in terms of enzyme activity, $R_w$ and $R_h$ are the radius of well and halo, respectively, $C(r)$ is the concentration at the radial distance of $r$, and $l$ is the thickness of agar plate.
+
+
+
+
+
+\end{document}
