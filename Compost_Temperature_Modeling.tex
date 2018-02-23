@@ -1,49 +1,83 @@
 %\documentclass{article}
-\documentclass{tufte-handout}
+\documentclass{tufte-handout}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{natbib}
 
 \author{Blerta and Marc and others! :-)}
-\title{Modeling the Fate and Transport of Pollutants}
-
+\title{Modeling Temperature in Compost}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 \maketitle
 
 
-I am getting ready to assemble projects for math modeling—I need some help crafting a one paragraph project description for students, and I am looking through our shared folder and not seeing much of a narrative for the diffusion fitting we talked about a while ago. Do you have anything I can use? Also, any references would be greatly appreciated. I would like to craft this next week, so we can both agree on its content before Spring break. 
-
-Oops, this is pretty different... I started a new "file" called, "Compost_Temperature_Modeling
 
 
 \section{Abstract}
-\noindent The movement of compounds in the environment is driven by two processes, advection and diffusion. Of course, these processes occur in three dimensions, but for this class we'll begin with one dimensional processes before getting to more complecated examples.
+\noindent Making compost relies on microbial processes to break organic matter down...
+
+
 
 \section{Introduction}
 
-The movement of contaminants through a media (e.g. air, water, and soil) is complex and difficult to predict. 
 
-In general, pollutants move in two ways: advection and dispersion. Advection is the bulk flow of materials that are "carried" by wind patterns, water currents, or groundwater flow paths. Dispersion is the spreading of the chemical via localizied mixing or diffusion. As you might guess, descriptions of advection and dispersion depend on the scale of interest, and can be described by a variety of equations.
+\subsection{Problem Statement}
 
-NOTE: The term advection sometimes serves as a synonym for convection, but technically, convection covers the sum of transport both by diffusion and by advection. Advective transport describes the movement of some quantity via the bulk flow of a fluid.
+\subsection{Farm Context}
 
-We might describe the concentration of a contaminant:
+\section{Materials and Methods}
 
-\begin{equation}
-C_t = f(\mathrm{advection}_t + \mathrm{dispersion_t})
-\end{equation}
 
-Of course, this depends on the time from which the contaminant was introduced the the environment. Below, we will further explore how to write out more useful equations for this conceptual idea.
-
-In addition to these two processes, pollutants might react in or with their media. Thus, their concentration may change with time as part of the breakdown process. For example, organic pollutants, such as pesticides, might react in the surface of leaves, in runoff, in soils or sediments, which might change their fate and transport behavior that we might add a term: 
-
-\begin{equation}
-C_t = f(\mathrm{advection}_t + \mathrm{dispersion_t} - \mathrm{breakdown}_t)
-\end{equation}
-
-This breakdown might be a zero-, first-, or second- order reaction. In other words, the reaction might be time-independent, time-dependent or concentration dependent or something more complicated. Certainly, well beyond the scope of our interests, but nevertheless, is something to keep in mind as you think about pollution movement. 
-
-One of the challenges for environmental scientists is to obtain meaningful chemical data from samples collected from air, surface waters, and groundwater to use to map the distribution of specific contaminants and to use as targets for any models that may be constructed to predict pollutant spread and concentrations or to model backward in time to understand the source of pollutants. 
 
 \section{Session Outcomes}
 \begin{enumerate}
@@ -54,9 +88,8 @@ One of the challenges for environmental scientists is to obtain meaningful chemi
 	\item Two dimensional analysis of advention
 \end{enumerate}
 
-\section{Material Transport}
 
-\section{Theory of Pollution Movement}
+\section{Theory of Temperature Diffusion}
 
 According to Wikipedia, advection can be described as as "velocity vector" and the del operator.
 
@@ -135,28 +168,32 @@ ux, the concentration gradient is approximated as the subtraction of two matrice
 The flux gradient is then also approximated by subtracting entire matrices (e.g. Flux[2:(n+1),]-Flux[1:(n),]). This is very fast. The zero-flux at the boundaries is imposed by binding a column or row with 0-s.
 
 
-<<2D function, evaluation=F>>=
-library(rootSolve)
-diffusion2D <- function(t,conc,par){
-Conc <- matrix(nr=n,nc=n,data=conc) # vector to 2-D matrix
-dConc <- -r*Conc*Conc # consumption
-BND <- rep(1,n) # boundary concentration
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{library}\hlstd{(rootSolve)}
+\hlstd{diffusion2D} \hlkwb{<-} \hlkwa{function}\hlstd{(}\hlkwc{t}\hlstd{,}\hlkwc{conc}\hlstd{,}\hlkwc{par}\hlstd{)\{}
+\hlstd{Conc} \hlkwb{<-} \hlkwd{matrix}\hlstd{(}\hlkwc{nr}\hlstd{=n,}\hlkwc{nc}\hlstd{=n,}\hlkwc{data}\hlstd{=conc)} \hlcom{# vector to 2-D matrix}
+\hlstd{dConc} \hlkwb{<-} \hlopt{-}\hlstd{r}\hlopt{*}\hlstd{Conc}\hlopt{*}\hlstd{Conc} \hlcom{# consumption}
+\hlstd{BND} \hlkwb{<-} \hlkwd{rep}\hlstd{(}\hlnum{1}\hlstd{,n)} \hlcom{# boundary concentration}
 
-# constant production in certain cells
-dConc[ii]<- dConc[ii]+ p
+\hlcom{# constant production in certain cells}
+\hlstd{dConc[ii]}\hlkwb{<-} \hlstd{dConc[ii]}\hlopt{+} \hlstd{p}
 
-#diffusion in X-direction; boundaries=imposed concentration
+\hlcom{#diffusion in X-direction; boundaries=imposed concentration}
 
-Flux <- -Dx * rbind(rep(0,n),(Conc[2:n,]-Conc[1:(n-1),]),rep(0,n))/dx
-dConc <- dConc - (Flux[2:(n+1),]-Flux[1:n,])/dx
+\hlstd{Flux} \hlkwb{<-} \hlopt{-}\hlstd{Dx} \hlopt{*} \hlkwd{rbind}\hlstd{(}\hlkwd{rep}\hlstd{(}\hlnum{0}\hlstd{,n),(Conc[}\hlnum{2}\hlopt{:}\hlstd{n,]}\hlopt{-}\hlstd{Conc[}\hlnum{1}\hlopt{:}\hlstd{(n}\hlopt{-}\hlnum{1}\hlstd{),]),}\hlkwd{rep}\hlstd{(}\hlnum{0}\hlstd{,n))}\hlopt{/}\hlstd{dx}
+\hlstd{dConc} \hlkwb{<-} \hlstd{dConc} \hlopt{-} \hlstd{(Flux[}\hlnum{2}\hlopt{:}\hlstd{(n}\hlopt{+}\hlnum{1}\hlstd{),]}\hlopt{-}\hlstd{Flux[}\hlnum{1}\hlopt{:}\hlstd{n,])}\hlopt{/}\hlstd{dx}
 
-#diffusion in Y-direction
-Flux <- -Dy * cbind(rep(0,n),(Conc[,2:n]-Conc[,1:(n-1)]),rep(0,n))/dy
-dConc <- dConc - (Flux[,2:(n+1)]-Flux[,1:n])/dy
+\hlcom{#diffusion in Y-direction}
+\hlstd{Flux} \hlkwb{<-} \hlopt{-}\hlstd{Dy} \hlopt{*} \hlkwd{cbind}\hlstd{(}\hlkwd{rep}\hlstd{(}\hlnum{0}\hlstd{,n),(Conc[,}\hlnum{2}\hlopt{:}\hlstd{n]}\hlopt{-}\hlstd{Conc[,}\hlnum{1}\hlopt{:}\hlstd{(n}\hlopt{-}\hlnum{1}\hlstd{)]),}\hlkwd{rep}\hlstd{(}\hlnum{0}\hlstd{,n))}\hlopt{/}\hlstd{dy}
+\hlstd{dConc} \hlkwb{<-} \hlstd{dConc} \hlopt{-} \hlstd{(Flux[,}\hlnum{2}\hlopt{:}\hlstd{(n}\hlopt{+}\hlnum{1}\hlstd{)]}\hlopt{-}\hlstd{Flux[,}\hlnum{1}\hlopt{:}\hlstd{n])}\hlopt{/}\hlstd{dy}
 
-return(list(as.vector(dConc)))
-}
-@
+\hlkwd{return}\hlstd{(}\hlkwd{list}\hlstd{(}\hlkwd{as.vector}\hlstd{(dConc)))}
+\hlstd{\}}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
 
 After specifying the values of the parameters, 10 cells on the 2-D grid where there will be
 substance produced are randomly selected (ii).
@@ -164,38 +201,50 @@ substance produced are randomly selected (ii).
 
 Figure 5: Steady-state solution of the nonlinear 2-Dimensional model
 
-<<label=parameters>>=
-# parameters
-dy <- dx <- 1 # grid size
-Dy <- Dx <- 1.5 # diffusion coeff, X- and Y-direction
-r <- 0.01 # 2-nd-order consumption rate (/time)
-p <- 20 # 0-th order production rate (CONC/t)
-n <- 100
-# 10 random cells where substance is produced at rate p
-ii <- trunc(cbind(runif(10)*n+1,runif(10)*n+1))
-
-@
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlcom{# parameters}
+\hlstd{dy} \hlkwb{<-} \hlstd{dx} \hlkwb{<-} \hlnum{1} \hlcom{# grid size}
+\hlstd{Dy} \hlkwb{<-} \hlstd{Dx} \hlkwb{<-} \hlnum{1.5} \hlcom{# diffusion coeff, X- and Y-direction}
+\hlstd{r} \hlkwb{<-} \hlnum{0.01} \hlcom{# 2-nd-order consumption rate (/time)}
+\hlstd{p} \hlkwb{<-} \hlnum{20} \hlcom{# 0-th order production rate (CONC/t)}
+\hlstd{n} \hlkwb{<-} \hlnum{100}
+\hlcom{# 10 random cells where substance is produced at rate p}
+\hlstd{ii} \hlkwb{<-} \hlkwd{trunc}\hlstd{(}\hlkwd{cbind}\hlstd{(}\hlkwd{runif}\hlstd{(}\hlnum{10}\hlstd{)}\hlopt{*}\hlstd{n}\hlopt{+}\hlnum{1}\hlstd{,}\hlkwd{runif}\hlstd{(}\hlnum{10}\hlstd{)}\hlopt{*}\hlstd{n}\hlopt{+}\hlnum{1}\hlstd{))}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
 The steady-state is found using function steady.2D. It takes as arguments a.o. the dimensionality
 of the problem (dimens) and lrw=1000000, the length of the work array needed by
 the solver. If this value is set too small, the solver will return with the size needed.
 It takes about 0.5 second to solve this 10000 state variable model.
 
-<< label = Steady2D>>=
-Conc0 <- matrix(nr=n,nc=n,10.)
-# print(system.time(
-# not working yet...
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{Conc0} \hlkwb{<-} \hlkwd{matrix}\hlstd{(}\hlkwc{nr}\hlstd{=n,}\hlkwc{nc}\hlstd{=n,}\hlnum{10.}\hlstd{)}
+\hlcom{# print(system.time(}
+\hlcom{# not working yet...}
 
-ST3 <- steady.2D(Conc0,func=diffusion2D,parms=NULL,pos=TRUE,dimens=c(n,n), lrw=1000000,atol=1e-10,rtol=1e-10,ctol=1e-1)
-
-@
+\hlstd{ST3} \hlkwb{<-} \hlkwd{steady.2D}\hlstd{(Conc0,}\hlkwc{func}\hlstd{=diffusion2D,}\hlkwc{parms}\hlstd{=}\hlkwa{NULL}\hlstd{,}\hlkwc{pos}\hlstd{=}\hlnum{TRUE}\hlstd{,}\hlkwc{dimens}\hlstd{=}\hlkwd{c}\hlstd{(n,n),} \hlkwc{lrw}\hlstd{=}\hlnum{1000000}\hlstd{,}\hlkwc{atol}\hlstd{=}\hlnum{1e-10}\hlstd{,}\hlkwc{rtol}\hlstd{=}\hlnum{1e-10}\hlstd{,}\hlkwc{ctol}\hlstd{=}\hlnum{1e-1}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
 
 
 The S3 image method is used to generate the steady-state plot.
 
 \begin{figure*}
-<< label=CreateImage, fig=TRUE >>=
-image(ST3,main="2-D diffusion+production", xlab="x", ylab="y", las=1)
-@
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{image}\hlstd{(ST3,}\hlkwc{main}\hlstd{=}\hlstr{"2-D diffusion+production"}\hlstd{,} \hlkwc{xlab}\hlstd{=}\hlstr{"x"}\hlstd{,} \hlkwc{ylab}\hlstd{=}\hlstr{"y"}\hlstd{,} \hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/CreateImage-1} 
+
+\end{knitrout}
 \end{figure*}
 
 

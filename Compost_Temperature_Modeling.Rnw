@@ -5,45 +5,29 @@
 \usepackage{natbib}
 
 \author{Blerta and Marc and others! :-)}
-\title{Modeling the Fate and Transport of Pollutants}
+\title{Modeling Temperature in Compost}
 
 \begin{document}
 \maketitle
 
 
-I am getting ready to assemble projects for math modeling—I need some help crafting a one paragraph project description for students, and I am looking through our shared folder and not seeing much of a narrative for the diffusion fitting we talked about a while ago. Do you have anything I can use? Also, any references would be greatly appreciated. I would like to craft this next week, so we can both agree on its content before Spring break. 
-
-Oops, this is pretty different... I started a new "file" called, "Compost_Temperature_Modeling
 
 
 \section{Abstract}
-\noindent The movement of compounds in the environment is driven by two processes, advection and diffusion. Of course, these processes occur in three dimensions, but for this class we'll begin with one dimensional processes before getting to more complecated examples.
+\noindent Making compost relies on microbial processes to break organic matter down...
+
+
 
 \section{Introduction}
 
-The movement of contaminants through a media (e.g. air, water, and soil) is complex and difficult to predict. 
 
-In general, pollutants move in two ways: advection and dispersion. Advection is the bulk flow of materials that are "carried" by wind patterns, water currents, or groundwater flow paths. Dispersion is the spreading of the chemical via localizied mixing or diffusion. As you might guess, descriptions of advection and dispersion depend on the scale of interest, and can be described by a variety of equations.
+\subsection{Problem Statement}
 
-NOTE: The term advection sometimes serves as a synonym for convection, but technically, convection covers the sum of transport both by diffusion and by advection. Advective transport describes the movement of some quantity via the bulk flow of a fluid.
+\subsection{Farm Context}
 
-We might describe the concentration of a contaminant:
+\section{Materials and Methods}
 
-\begin{equation}
-C_t = f(\mathrm{advection}_t + \mathrm{dispersion_t})
-\end{equation}
 
-Of course, this depends on the time from which the contaminant was introduced the the environment. Below, we will further explore how to write out more useful equations for this conceptual idea.
-
-In addition to these two processes, pollutants might react in or with their media. Thus, their concentration may change with time as part of the breakdown process. For example, organic pollutants, such as pesticides, might react in the surface of leaves, in runoff, in soils or sediments, which might change their fate and transport behavior that we might add a term: 
-
-\begin{equation}
-C_t = f(\mathrm{advection}_t + \mathrm{dispersion_t} - \mathrm{breakdown}_t)
-\end{equation}
-
-This breakdown might be a zero-, first-, or second- order reaction. In other words, the reaction might be time-independent, time-dependent or concentration dependent or something more complicated. Certainly, well beyond the scope of our interests, but nevertheless, is something to keep in mind as you think about pollution movement. 
-
-One of the challenges for environmental scientists is to obtain meaningful chemical data from samples collected from air, surface waters, and groundwater to use to map the distribution of specific contaminants and to use as targets for any models that may be constructed to predict pollutant spread and concentrations or to model backward in time to understand the source of pollutants. 
 
 \section{Session Outcomes}
 \begin{enumerate}
@@ -54,9 +38,8 @@ One of the challenges for environmental scientists is to obtain meaningful chemi
 	\item Two dimensional analysis of advention
 \end{enumerate}
 
-\section{Material Transport}
 
-\section{Theory of Pollution Movement}
+\section{Theory of Temperature Diffusion}
 
 According to Wikipedia, advection can be described as as "velocity vector" and the del operator.
 

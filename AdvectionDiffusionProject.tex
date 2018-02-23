@@ -1,16 +1,68 @@
 %\documentclass{article}
-\documentclass{tufte-handout}
+\documentclass{tufte-handout}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{natbib}
 
 \author{Blerta and Marc and others! :-)}
 \title{Modeling the Fate and Transport of Pollutants}
-
-\usepackage{Sweave}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
-\input{AdvectionDiffusionProject-concordance}
 \maketitle
+
+
+I am getting ready to assemble projects for math modeling—I need some help crafting a one paragraph project description for students, and I am looking through our shared folder and not seeing much of a narrative for the diffusion fitting we talked about a while ago. Do you have anything I can use? Also, any references would be greatly appreciated. I would like to craft this next week, so we can both agree on its content before Spring break. 
+
 
 \section{Abstract}
 \noindent The movement of compounds in the environment is driven by two processes, advection and diffusion. Of course, these processes occur in three dimensions, but for this class we'll begin with one dimensional processes before getting to more complecated examples.
@@ -131,30 +183,32 @@ ux, the concentration gradient is approximated as the subtraction of two matrice
 The flux gradient is then also approximated by subtracting entire matrices (e.g. Flux[2:(n+1),]-Flux[1:(n),]). This is very fast. The zero-flux at the boundaries is imposed by binding a column or row with 0-s.
 
 
-\begin{Schunk}
-\begin{Sinput}
-> library(rootSolve)
-> diffusion2D <- function(t,conc,par){
-+ Conc <- matrix(nr=n,nc=n,data=conc) # vector to 2-D matrix
-+ dConc <- -r*Conc*Conc # consumption
-+ BND <- rep(1,n) # boundary concentration
-+ 
-+ # constant production in certain cells
-+ dConc[ii]<- dConc[ii]+ p
-+ 
-+ #diffusion in X-direction; boundaries=imposed concentration
-+ 
-+ Flux <- -Dx * rbind(rep(0,n),(Conc[2:n,]-Conc[1:(n-1),]),rep(0,n))/dx
-+ dConc <- dConc - (Flux[2:(n+1),]-Flux[1:n,])/dx
-+ 
-+ #diffusion in Y-direction
-+ Flux <- -Dy * cbind(rep(0,n),(Conc[,2:n]-Conc[,1:(n-1)]),rep(0,n))/dy
-+ dConc <- dConc - (Flux[,2:(n+1)]-Flux[,1:n])/dy
-+ 
-+ return(list(as.vector(dConc)))
-+ }
-\end{Sinput}
-\end{Schunk}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{library}\hlstd{(rootSolve)}
+\hlstd{diffusion2D} \hlkwb{<-} \hlkwa{function}\hlstd{(}\hlkwc{t}\hlstd{,}\hlkwc{conc}\hlstd{,}\hlkwc{par}\hlstd{)\{}
+\hlstd{Conc} \hlkwb{<-} \hlkwd{matrix}\hlstd{(}\hlkwc{nr}\hlstd{=n,}\hlkwc{nc}\hlstd{=n,}\hlkwc{data}\hlstd{=conc)} \hlcom{# vector to 2-D matrix}
+\hlstd{dConc} \hlkwb{<-} \hlopt{-}\hlstd{r}\hlopt{*}\hlstd{Conc}\hlopt{*}\hlstd{Conc} \hlcom{# consumption}
+\hlstd{BND} \hlkwb{<-} \hlkwd{rep}\hlstd{(}\hlnum{1}\hlstd{,n)} \hlcom{# boundary concentration}
+
+\hlcom{# constant production in certain cells}
+\hlstd{dConc[ii]}\hlkwb{<-} \hlstd{dConc[ii]}\hlopt{+} \hlstd{p}
+
+\hlcom{#diffusion in X-direction; boundaries=imposed concentration}
+
+\hlstd{Flux} \hlkwb{<-} \hlopt{-}\hlstd{Dx} \hlopt{*} \hlkwd{rbind}\hlstd{(}\hlkwd{rep}\hlstd{(}\hlnum{0}\hlstd{,n),(Conc[}\hlnum{2}\hlopt{:}\hlstd{n,]}\hlopt{-}\hlstd{Conc[}\hlnum{1}\hlopt{:}\hlstd{(n}\hlopt{-}\hlnum{1}\hlstd{),]),}\hlkwd{rep}\hlstd{(}\hlnum{0}\hlstd{,n))}\hlopt{/}\hlstd{dx}
+\hlstd{dConc} \hlkwb{<-} \hlstd{dConc} \hlopt{-} \hlstd{(Flux[}\hlnum{2}\hlopt{:}\hlstd{(n}\hlopt{+}\hlnum{1}\hlstd{),]}\hlopt{-}\hlstd{Flux[}\hlnum{1}\hlopt{:}\hlstd{n,])}\hlopt{/}\hlstd{dx}
+
+\hlcom{#diffusion in Y-direction}
+\hlstd{Flux} \hlkwb{<-} \hlopt{-}\hlstd{Dy} \hlopt{*} \hlkwd{cbind}\hlstd{(}\hlkwd{rep}\hlstd{(}\hlnum{0}\hlstd{,n),(Conc[,}\hlnum{2}\hlopt{:}\hlstd{n]}\hlopt{-}\hlstd{Conc[,}\hlnum{1}\hlopt{:}\hlstd{(n}\hlopt{-}\hlnum{1}\hlstd{)]),}\hlkwd{rep}\hlstd{(}\hlnum{0}\hlstd{,n))}\hlopt{/}\hlstd{dy}
+\hlstd{dConc} \hlkwb{<-} \hlstd{dConc} \hlopt{-} \hlstd{(Flux[,}\hlnum{2}\hlopt{:}\hlstd{(n}\hlopt{+}\hlnum{1}\hlstd{)]}\hlopt{-}\hlstd{Flux[,}\hlnum{1}\hlopt{:}\hlstd{n])}\hlopt{/}\hlstd{dy}
+
+\hlkwd{return}\hlstd{(}\hlkwd{list}\hlstd{(}\hlkwd{as.vector}\hlstd{(dConc)))}
+\hlstd{\}}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
 
 After specifying the values of the parameters, 10 cells on the 2-D grid where there will be
 substance produced are randomly selected (ii).
@@ -162,155 +216,51 @@ substance produced are randomly selected (ii).
 
 Figure 5: Steady-state solution of the nonlinear 2-Dimensional model
 
-\begin{Schunk}
-\begin{Sinput}
-> # parameters
-> dy <- dx <- 1 # grid size
-> Dy <- Dx <- 1.5 # diffusion coeff, X- and Y-direction
-> r <- 0.01 # 2-nd-order consumption rate (/time)
-> p <- 20 # 0-th order production rate (CONC/t)
-> n <- 100
-> # 10 random cells where substance is produced at rate p
-> ii <- trunc(cbind(runif(10)*n+1,runif(10)*n+1))
-> 
-\end{Sinput}
-\end{Schunk}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlcom{# parameters}
+\hlstd{dy} \hlkwb{<-} \hlstd{dx} \hlkwb{<-} \hlnum{1} \hlcom{# grid size}
+\hlstd{Dy} \hlkwb{<-} \hlstd{Dx} \hlkwb{<-} \hlnum{1.5} \hlcom{# diffusion coeff, X- and Y-direction}
+\hlstd{r} \hlkwb{<-} \hlnum{0.01} \hlcom{# 2-nd-order consumption rate (/time)}
+\hlstd{p} \hlkwb{<-} \hlnum{20} \hlcom{# 0-th order production rate (CONC/t)}
+\hlstd{n} \hlkwb{<-} \hlnum{100}
+\hlcom{# 10 random cells where substance is produced at rate p}
+\hlstd{ii} \hlkwb{<-} \hlkwd{trunc}\hlstd{(}\hlkwd{cbind}\hlstd{(}\hlkwd{runif}\hlstd{(}\hlnum{10}\hlstd{)}\hlopt{*}\hlstd{n}\hlopt{+}\hlnum{1}\hlstd{,}\hlkwd{runif}\hlstd{(}\hlnum{10}\hlstd{)}\hlopt{*}\hlstd{n}\hlopt{+}\hlnum{1}\hlstd{))}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
 The steady-state is found using function steady.2D. It takes as arguments a.o. the dimensionality
 of the problem (dimens) and lrw=1000000, the length of the work array needed by
 the solver. If this value is set too small, the solver will return with the size needed.
 It takes about 0.5 second to solve this 10000 state variable model.
 
-\begin{Schunk}
-\begin{Sinput}
-> Conc0 <- matrix(nr=n,nc=n,10.)
-> # print(system.time(
-> # not working yet...
-> 
-> ST3 <- steady.2D(Conc0,func=diffusion2D,parms=NULL,pos=TRUE,dimens=c(n,n), lrw=1000000,atol=1e-10,rtol=1e-10,ctol=1e-1)
-> 
-\end{Sinput}
-\end{Schunk}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{Conc0} \hlkwb{<-} \hlkwd{matrix}\hlstd{(}\hlkwc{nr}\hlstd{=n,}\hlkwc{nc}\hlstd{=n,}\hlnum{10.}\hlstd{)}
+\hlcom{# print(system.time(}
+\hlcom{# not working yet...}
+
+\hlstd{ST3} \hlkwb{<-} \hlkwd{steady.2D}\hlstd{(Conc0,}\hlkwc{func}\hlstd{=diffusion2D,}\hlkwc{parms}\hlstd{=}\hlkwa{NULL}\hlstd{,}\hlkwc{pos}\hlstd{=}\hlnum{TRUE}\hlstd{,}\hlkwc{dimens}\hlstd{=}\hlkwd{c}\hlstd{(n,n),} \hlkwc{lrw}\hlstd{=}\hlnum{1000000}\hlstd{,}\hlkwc{atol}\hlstd{=}\hlnum{1e-10}\hlstd{,}\hlkwc{rtol}\hlstd{=}\hlnum{1e-10}\hlstd{,}\hlkwc{ctol}\hlstd{=}\hlnum{1e-1}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
 
 
 The S3 image method is used to generate the steady-state plot.
 
 \begin{figure*}
-\begin{Schunk}
-\begin{Sinput}
-> image(ST3,main="2-D diffusion+production", xlab="x", ylab="y", las=1)
-\end{Sinput}
-\end{Schunk}
-\includegraphics{AdvectionDiffusionProject-CreateImage}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{image}\hlstd{(ST3,}\hlkwc{main}\hlstd{=}\hlstr{"2-D diffusion+production"}\hlstd{,} \hlkwc{xlab}\hlstd{=}\hlstr{"x"}\hlstd{,} \hlkwc{ylab}\hlstd{=}\hlstr{"y"}\hlstd{,} \hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/CreateImage-1} 
+
+\end{knitrout}
 \end{figure*}
-\section{Pre-lab Activity}
-
-\subsection{Pre-assessment: What do you know about diffusion?}
-
-\subsection{Conceptual Models of Diffusion}
-
-
-\subsection{Preparing for the Lab}
-
-What can you do to prepare for the lab?  Great question. 
-
-I have been thinking about this for a few weeks and have some suggestions.
-
-\begin{enumerate}
-	\item Decide how you will make the standard curve before coming to class.
-	\item Review the recipe to make the agarose and write it out in your laboratory book.
-	\item Decide how you will sample your agar (spatially) and 
-	\item create some tables to record the data in the lab book before class.
-
-	\item The bulk density of the agar is 1.5 g/ml. That means for every 1 gram, you will have a volume of 0.66 mL.  You should check this to see how I get this.  You will be diluting this volume as you heat them to get the dye into the solution. How will you back calculate the concentration of the dye given a dilution effect in the test tubes that  you melt the agar in?
-
-	\item What are the possible interferences that you should consider?  IMPORTANT: What blanks should you be sure to do?
-\end{enumerate}
-
-
-\section{Laboratory Methods}
-
-\subsection{Preparing Agarose and Sampling Methods}
-
-Agarose gels are prepared by adding the desired volume... 
-
-The resulting slurry was heated to 90$\circ$C until complete dissolution of agarose, and then slowly cooled. Before gelation, the viscous agarose solution was cast, then slowly cooled at room temperature. The cast are in circular petri dishes (40 cm in diameter).
-
-%of 0.1 M PBS buffer (phosphate-buffered saline, Sigma) to the measured amount of agarose powder (type VII: low gelling temperature, Sigma). Once the gel was formed, it was immersed in 0.1 M PBS solution and allowed to equilibrate. 
-
-%To calculate the fiber radius (Ogston et al., 1973) or the permeability (Phillips et al., 1989), the volume fraction of fibers for agarose gels must be known. The volume fraction of agarose fibers, f, was obtained with the following formula:
-
-%f 5 cagarose/~ragarosevagarose! (1)
-
-%where cagarose is the concentration of agarose in the gel (w/v), ragarose is the dry agarose density (1.64 g/ml; Laurent, 1967); and vagarose is the mass fraction of agarose in a fiber, calculated to be 0.625 (Johnson et al., 1995). Equation 1 takes into account the internally bound water in each fiber that is not accessible to macromolecules. From Eq. 1, the volume fraction of fibers of a 2\% agarose gel is f 5 0.0195.
-
-Samples will be taken from the petri dishes with an exacto knife. Try to sample 1 cm$^3$. Record the two distances of the agar sampled -- and weight sample to obtain a volume (via density).
-
-\subsection{Equipment}
- 
-\begin{itemize}
-	\item Precision Balances
-	\item 20 ml pipettes
-	\item 50 ml beaker
-	\item	Weighing boats
-	\item	Distilled water
-	\item Saran wrap
-	\item Spec 20?
-\end{itemize}
-	
-
-\section{Previous Results}
-
-The following are images of notes from a previous lab: I still need to work on translating these into something I can translate. These are over 5 years old and because the results were so ambiguous, I think I never got around to writing this out.
-
-\begin{figure}
-%\includegraphics{../IMG_0578.jpg}
-%	\caption{In my first experiment, we did a circle, but I couldn't figure out how to sample the agar -- which is melted and we measure the concentration of the dye. It seemed to me that we should sample equal volumes, but that got really hard to figure out because the ones at outside got to be rather narrow and hard to cut. Of course, we can normalize the volume with mass base on the density of the agarose.}
-	\label{fig:IMG_0578}
-\end{figure}
-
-\begin{figure}
-	%\includegraphics{../IMG_0576.jpg}
-%	\caption{The dye was placed in the holes in the agarose --- with time, the dye spread out and I have drawn pictures of various sampling locations that might be sampled. Which ever location, The measure the distance (both ends) of the cube should be measured---I think. I suspect the calculation will depend on selecting an appropriate range to the limits of for integration.}
-	\label{fig:IMG_0576}
-\end{figure}
-
-\begin{figure}
-%\includegraphics{../IMG_0579.jpg}
-%	\caption{This image shows how we melted the (low melting point) argarose into a test tube --- that was also the same size as a cuvette. The cuvette was then put into a Spec 20 (tuned to maasure the absorbance of the dye). I also needed to figure out the concentration dilution with distance relative to the amount put it. I'd like to develop an easy R model for students to follow so that can do that}
-	\label{fig:IMG_0579}
-\end{figure}
-
-
-\begin{figure}
-%\includegraphics{../IMG_0577.jpg}
-%	\caption{Finally, this is what I expected the results to look like. But I think this was a brain storm with students --- and we found nothing like this. I think the graph on the left is at $T_0$ and then $T_{final}$. The one on the right is an acknowledgment that the dye's origin would get less concentrated with time. And then I wondered if we needed to capture both $T_0$ and then $T_{final}$.}
-	\label{fig:IMG_0577}
-\end{figure}
-
-Here are the results: without the $T_0$ I was completely lost of how to deal with this. But in reality, these are the kind of data we get with groundwater sampling...so, it must be trivial!
-
-
-\begin{table}
-	\begin{tabular}{llc} \hline
-Conc		&		Distance from Center	&	Mass \\ \hline\hline
-0.035		& 	1				& 5		\\
-0.019		&		7				& 5.2 \\
-0.001		& 	11			&	5.3	\\
-0.001	  & 	15			&	4.8	\\ \hline
-	\end{tabular}
-	\caption{Results from a Test}
-	\label{tab:ResultsFromATest}
-\end{table}
-
-\subsection{Variations on the Theme}
-
-I wonder if we tilt the petri dishes?  This would create a preferential flow down gradient. Perhaps a slight tilt?
-
-
-
-
-
-\section{Assessment}
 
 
 \section{Diffusion Derivation}
