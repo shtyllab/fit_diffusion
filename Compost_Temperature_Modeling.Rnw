@@ -20,6 +20,8 @@
 
 \section{Introduction}
 
+I need some help crafting a one paragraph project description for students, and I am looking through our shared folder and not seeing much of a narrative for the diffusion fitting we talked about a while ago. Do you have anything I can use? Also, any references would be greatly appreciated. I would like to craft this next week, so we can both agree on its content before Spring break. 
+
 
 \subsection{Problem Statement}
 
