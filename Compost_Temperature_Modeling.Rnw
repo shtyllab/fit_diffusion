@@ -20,16 +20,65 @@
 
 \section{Introduction}
 
-I need some help crafting a one paragraph project description for students, and I am looking through our shared folder and not seeing much of a narrative for the diffusion fitting we talked about a while ago. Do you have anything I can use? Also, any references would be greatly appreciated. I would like to craft this next week, so we can both agree on its content before Spring break. 
+Any references would be greatly appreciated. 
+
+
+
+I would like to craft this next week, so we can both agree on its content before Spring break. 
+
+
 
 
 \subsection{Problem Statement}
 
+Composting is a process. In spite of our appreciation of the decomposition process, the breakdown of organic matter from ``raw waste'' into ``mature compost'' may rely on numerous indicators that signify maturity. But determining what maturity means is far from deterministic.
+
+Many uses of compost require a mature product that prevents nutrients present in the soil from being tied up (immobilized). Therefore, mature compost is important because it will not adversely affect plant development due to reduced oxygen or nitrogen availability and/or the presence of phytotoxic compounds.
+
+However, immature compost products can be used beneficially. For example, conventional growers may apply unstable compost to increase soil organic matter. They may not intend to plant for several weeks, or may not be concerned about a small amount of nitrogen immobilization from unstable compost. In general, immature compost is used to build organic matter content in depleted soils.
+
+
+\subsection{Why is Compost Maturity Important?}
+
+Stability and maturity are terms often used to characterize compost, yet compost specialists have varying opinions about what these terms mean.
+
+The term ``stable'' typically refers to a compost that is not undergoing rapid decomposition and whose nutrients are slowly released into the soil. Stability is important in determining the potential impact of the compost material on nitrogen availability in soil or growth media.
+Stable compost consumes little nitrogen and oxygen and generates little CO2 or heat. Unstable, active compost demands nitrogen when applied to soil and growth media.
+
+Composts that cause nitrogen deficiency can be detrimental to plant growth, even causing death to plants in some cases. If stored improperly and left unaerated, unstable compost can become anaerobic and generate nuisance odors.
+Maturity is the degree or level of completeness of the composting process. For mature compost, raw starting materials (feedstocks) have been sufficiently decomposed to produce a stable product. In contrast, immature compost may contain one or more compounds that inhibit plant growth, may contain viable weed seeds, or have other undesirable characteristics, such as odor.
+
+Compost Laboratory Analysis
+Maturity cannot be described by a single property, but can be measured by two or more chemical and biological properties. The California Compost Quality Council (CCQC) has developed a numerical “Maturity Index” that uses standard laboratory test methods to rate compost maturity.
+
+\subsection{CCQC Maturity Index}
+
+The CCQC Maturity Index uses a sample’s organic carbon-to-nitrogen ratio as an initial pass/fail screening. A compost sample must have C:N ratio equal to or less than 25:1 to be considered mature enough for further testing. If a compost sample passes this initial screening, it is then subjected to two sets of tests.
+
+Tests from group A measure whether adequate decomposition has occurred by measuring carbon dioxide release or oxygen use. Tests from group B directly measure the level of potentially phytotoxic compounds, like ammonia, in a compost sample. Or alternatively, they indirectly assess whether a compost sample has phytotoxic compounds present by measuring seed germination and/or plant growth.
+
+\subsection{Length of the Composting Process}
+
+State of California Regulations (Title 14, California Code of Regulations, Division 7, Chapter 3.1, section 17868.3, Pathogen Reduction) requires compost producers to adhere to a process to reduce pathogens (PFRP).
+
+For example, in regard to static pile or windrow composting, the regulations require compost sampling to verify an internal temperature of 55 degrees centigrade for 15 days, and be turned a minimum of five times. These requirements will ensure that pathogens and weed seeds are killed.
+
+\url{https://solvita.com/compost/}
+
+
 \subsection{Farm Context}
+
+The Pomona Farm relies on simply indicators to assess maturity.
 
 \section{Materials and Methods}
 
+\subsection{Materials}
 
+Three compost piles... at various stages of decomposition and monitoring over the semester...
+
+\begin{itemize}
+  \item 8 (I have four, but we should get more!) Hobo Onset temperature loggers \url{http://www.onsetcomp.com/products/data-loggers/ua-001-64}
+\end{itemize}
 
 \section{Session Outcomes}
 \begin{enumerate}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  23 FEB 2018 13:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.8.9)  24 FEB 2018 00:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -728,73 +728,82 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 96.
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 98.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pplx.fd
-File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
-)
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 98.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
-File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
-)
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 98.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-)
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 98.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
-File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
-)
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 98.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-) [1
+[1
 
 {/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Missing character: There is no â in font pplr9t!
-Missing character: There is no ˆ in font pplr9t!
-Missing character: There is no ’ in font pplr9t!
-Missing character: There is no â in font pplr9t!
-Missing character: There is no ˆ in font pplr9t!
-Missing character: There is no ’ in font pplr9t!
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 116.
 
-Overfull \hbox (29.25989pt too wide) in paragraph at lines 140--140
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
- 
- []
-
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 150.
 (/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 150.
-LaTeX Font Info:    Font shape `T1/fvm/bx/n' in size <10> not available
-(Font)              Font shape `T1/fvm/b/n' tried instead on input line 150.
-LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
-(Font)              scaled to size 8.50006pt on input line 150.
- [2]
-LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10> not available
-(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 176.
-LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 8.50006pt on input line 176.
+(Font)              scaled to size 8.50006pt on input line 116.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 116
+.
 
-Overfull \hbox (41.07541pt too wide) in paragraph at lines 185--185
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pplx.fd
+File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
+)
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 116
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 116
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 116
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 116
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+) [2]
+LaTeX Font Info:    Try loading font information for TS1+pplj on input line 130
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pplj.fd
+File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
+)
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 147.
+ [3]
+Missing character: There is no â in font pplr9t!
+Missing character: There is no ˆ in font pplr9t!
+Missing character: There is no ’ in font pplr9t!
+Missing character: There is no â in font pplr9t!
+Missing character: There is no ˆ in font pplr9t!
+Missing character: There is no ’ in font pplr9t!
+
+Overfull \hbox (29.25989pt too wide) in paragraph at lines 191--191
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+ 
+ []
+
+LaTeX Font Info:    Font shape `T1/fvm/bx/n' in size <10> not available
+(Font)              Font shape `T1/fvm/b/n' tried instead on input line 201.
+LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
+(Font)              scaled to size 8.50006pt on input line 201.
+[4]
+LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10> not available
+(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 227.
+LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
+(Font)              scaled to size 8.50006pt on input line 227.
+
+Overfull \hbox (41.07541pt too wide) in paragraph at lines 236--236
 [][]\T1/fvm/m/n/10 Flux[] []<-[] []-[][]Dx[] []*[] []\T1/fvm/b/n/10 rbind[][]\T
 1/fvm/m/n/10 ([][]\T1/fvm/b/n/10 rep[][]\T1/fvm/m/n/10 ([][]0[][],n),(Conc[[][]
 2[][]:[][]n,][][]-[][]Conc[[][]1[][]:[][](n[][]-[][]1[][]),]),[][]\T1/fvm/b/n/1
@@ -802,15 +811,15 @@ Overfull \hbox (41.07541pt too wide) in paragraph at lines 185--185
  []
 
 
-Overfull \hbox (41.07541pt too wide) in paragraph at lines 189--189
+Overfull \hbox (41.07541pt too wide) in paragraph at lines 240--240
 [][]\T1/fvm/m/n/10 Flux[] []<-[] []-[][]Dy[] []*[] []\T1/fvm/b/n/10 cbind[][]\T
 1/fvm/m/n/10 ([][]\T1/fvm/b/n/10 rep[][]\T1/fvm/m/n/10 ([][]0[][],n),(Conc[,[][
 ]2[][]:[][]n][][]-[][]Conc[,[][]1[][]:[][](n[][]-[][]1[][])]),[][]\T1/fvm/b/n/1
 0 rep[][]\T1/fvm/m/n/10 ([][]0[][],n))[][]/[][]dy[][] 
  []
 
-[3]
-Overfull \hbox (296.92715pt too wide) in paragraph at lines 230--230
+[5]
+Overfull \hbox (296.92715pt too wide) in paragraph at lines 281--281
 [][]\T1/fvm/m/n/10 ST3[] []<-[] []\T1/fvm/b/n/10 steady.2D[][]\T1/fvm/m/n/10 (C
 onc0,[][]func[][]=diffusion2D,[][]parms[][]=[][]\T1/fvm/b/n/10 NULL[][]\T1/fvm/
 m/n/10 ,[][]pos[][]=[][]TRUE[][],[][]dimens[][]=[][]\T1/fvm/b/n/10 c[][]\T1/fvm
@@ -818,20 +827,14 @@ m/n/10 ,[][]pos[][]=[][]TRUE[][],[][]dimens[][]=[][]\T1/fvm/b/n/10 c[][]\T1/fvm
 ][]=[][]1e-10[][],[][]ctol[][]=[][]1e-1[][])[][] 
  []
 
-<figure/CreateImage-1.pdf, id=82, 505.89pt x 505.89pt>
+<figure/CreateImage-1.pdf, id=97, 505.89pt x 505.89pt>
 File: figure/CreateImage-1.pdf Graphic file (type pdf)
 
 <use figure/CreateImage-1.pdf>
-Package pdftex.def Info: figure/CreateImage-1.pdf used on input line 245.
+Package pdftex.def Info: figure/CreateImage-1.pdf used on input line 296.
 (pdftex.def)             Requested size: 480.0pt x 480.0061pt.
- [4] [5 <./figure/CreateImage-1.pdf>]
-LaTeX Font Info:    Try loading font information for TS1+pplj on input line 320
-.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pplj.fd
-File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
-) [6]
-Overfull \hbox (8.57156pt too wide) detected at line 349
+ [6] [7 <./figure/CreateImage-1.pdf>] [8]
+Overfull \hbox (8.57156pt too wide) detected at line 400
 []\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 C[] \OMS/zplm/m/n/10 ^^@ \OML/zplm/m/it/1
 0 C[]\OT1/zplm/m/n/10 ) = [[][](\OML/zplm/m/it/10 C[] \OMS/zplm/m/n/10 ^^@ \OML
 /zplm/m/it/10 C[]\OT1/zplm/m/n/10 ) + [](\OML/zplm/m/it/10 C[] \OMS/zplm/m/n/10
@@ -840,33 +843,33 @@ Overfull \hbox (8.57156pt too wide) detected at line 349
  []
 
 
-Overfull \hbox (10.30136pt too wide) detected at line 352
+Overfull \hbox (10.30136pt too wide) detected at line 403
 []\OML/zplm/m/it/10 C[] \OT1/zplm/m/n/10 = []\OML/zplm/m/it/10 C[] \OMS/zplm/m/
 n/10 ^^@ []\OML/zplm/m/it/10 C[] \OT1/zplm/m/n/10 + [](\OML/zplm/m/it/10 C[] \O
 MS/zplm/m/n/10 ^^@ \OML/zplm/m/it/10 C[]\OT1/zplm/m/n/10 ) + [](\OML/zplm/m/it/
 10 C[] \OT1/zplm/m/n/10 + \OML/zplm/m/it/10 C[]\OT1/zplm/m/n/10 )
  []
 
-[7]
+[9]
 
 Package bibentry Warning: You have used \nobibliography* 
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 370.
-[8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 370.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 421.
+[10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 421.
  (./Compost_Temperature_Modeling.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 370.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 370.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 421.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 421.
 Package rerunfilecheck Info: File `Compost_Temperature_Modeling.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: 38821A3EC871A04477FA19084E752EB1;1402.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 370.
+(rerunfilecheck)             Checksum: 2E21ABDFD620DB01112DF67E67549AA9;1405.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 421.
  ) 
 Here is how much of TeX's memory you used:
- 13122 strings out of 494820
- 184021 string characters out of 3178050
+ 13128 strings out of 494820
+ 184093 string characters out of 3178050
  277778 words of memory out of 3000000
  15984 multiletter control sequences out of 15000+200000
  50976 words of font info for 89 fonts, out of 3000000 for 9000
@@ -885,10 +888,10 @@ exmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/bera/fvmro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/up
 lr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Compost_Temperature_Modeling.pdf (8 pages, 179515 bytes).
+Output written on Compost_Temperature_Modeling.pdf (10 pages, 186874 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
- 53 named destinations out of 1000 (max. 500000)
+ 211 PDF objects out of 1000 (max. 8388607)
+ 181 compressed objects within 2 object streams
+ 59 named destinations out of 1000 (max. 500000)
  1110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
